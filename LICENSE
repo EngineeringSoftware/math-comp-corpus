@@ -10,74 +10,72 @@ License: MIT
 Files: lemmas-filtered/*
 License: MIT
 
-Files: raw-files/finmap/*
+Files: raw-files/math-comp_finmap/*
 License: CECILL-B
 
-Files: raw-files/fourcolor/*
+Files: raw-files/math-comp_fourcolor/*
 License: CECILL-B
 
-Files: raw-files/math-comp/*
+Files: raw-files/math-comp_math-comp/*
 License: CECILL-B
 
-Files: raw-files/odd-order/*
+Files: raw-files/math-comp_odd-order/*
 License: CECILL-B
 
-Files: raw-files/analysis/*
+Files: raw-files/math-comp_analysis/*
 License: CECILL-C
 
-Files: raw-files/bigenough/*
+Files: raw-files/math-comp_bigenough/*
 License: CECILL-B
 
-Files: raw-files/elliptic-curves/*
+Files: raw-files/strub_elliptic-curves-ssr/*
 License: CECILL-B
 
-Files: raw-files/grobner/*
+Files: raw-files/thery_grobner/*
 License: CECILL-B
 
-Files: raw-files/multinomials/*
+Files: raw-files/math-comp_multinomials/*
 License: CECILL-B
 
-Files: raw-files/real-closed/*
+Files: raw-files/math-comp_real-closed/*
 License: CECILL-B
 
-Files: raw-files/robot/*
+Files: raw-files/affeldt-aist_coq-robot/*
 License: LGPL-3.0-only
 
-Files: raw-files/two-square/*
+Files: raw-files/thery_twoSquare/*
 License: CECILL-B
 
-Files: raw-files/bits/*
+Files: raw-files/coq-community_coq-bits/*
 License: Apache-2.0
 
-Files: raw-files/comp-dec-pdl/*
+Files: raw-files/palmskog_comp-dec-pdl/*
 License: CECILL-B
 
-Files: raw-files/disel/*
+Files: raw-files/DistributedComponents_disel/*
 License: BSD-2-Clause
 
-Files: raw-files/fcsl-pcm/*
+Files: raw-files/imdea-software_fcsl-pcm/*
 License: Apache-2.0
 
-Files: raw-files/games/*
+Files: raw-files/gstew5_games/*
 License: BSD-2-Clause
 
-Files: raw-files/monae/*
+Files: raw-files/palmskog_monae/*
 License: GPL-3.0-only
 
-Files: raw-files/reglang/*
+Files: raw-files/palmskog_coq-reglang/*
 License: CECILL-B
 
-Files: raw-files/toychain/*
+Files: raw-files/certichain_toychain/*
 License: BSD-2-Clause
 
-Files: raw-files/infotheo/*
+Files: raw-files/palmskog_infotheo/*
 License: GPL-3.0-only
-
-
 
 MIT License
 
-Copyright (c) 2020-Present MathComp Corpus
+Copyright (c) 2020-Present
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
