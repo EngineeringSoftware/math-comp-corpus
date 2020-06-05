@@ -53,17 +53,15 @@ on how well projects conform to the [MathComp conventions][math-comp-contrib].
 | [infotheo][infotheo]               | 6c17242      | 81         | 42295  | LO   | [GPL-3.0-only][gpl3]     |
 
 The structure of the corpus is as follows:
-```
-projects-standalone-8.10.yml
-                 The list of projects, alone with their URL, SHA, build command,
-                 installation command, etc.
-raw-files        The source files and their machine-readable representations.
-lemmas           The lemmas extracted from the corpus.
-lemmas-filtered  The subset of lemmas with restriction on the maximum sizes of
-                 their elaborated terms, suitable for machine learning applications.
-definitions      The definitions extracted from the corpus.
-data-indexes     The data splitting used in the research paper.
-```
+
+| File/directory                 | Contents                                                                               |
+|:-------------------------------|:---------------------------------------------------------------------------------------|
+| `projects-standalone-8.10.yml` | List of projects, along with their URL, SHA, build command, installation command, etc. |
+| `raw-files`                    | Project source files and their machine-readable representations.                       |
+| `lemmas`                       | Lemmas extracted from the corpus.                                                      |
+| `lemmas-filtered`              | Subset of lemmas obeying restrictions on the maximum sizes of their elaborated terms.  |
+| `definitions`                  | Definitions extracted from the corpus.                                                 |
+| `data-indexes`                 | Data splitting used in the research paper.                                             |
 
 [finmap]: https://github.com/math-comp/finmap
 [fourcolor]: https://github.com/math-comp/fourcolor
