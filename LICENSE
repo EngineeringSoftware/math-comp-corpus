@@ -1,0 +1,86 @@
+Files: data-indexes/*
+License: MIT
+
+Files: definitions/*
+License: MIT
+
+Files: lemmas/*
+License: MIT
+
+Files: lemmas-filtered/*
+License: MIT
+
+Files: raw-files/finmap/*
+License: CECILL-B
+
+Files: raw-files/fourcolor/*
+License: CECILL-B
+
+Files: raw-files/math-comp/*
+License: CECILL-B
+
+Files: raw-files/odd-order/*
+License: CECILL-B
+
+Files: raw-files/analysis/*
+License: CECILL-C
+
+Files: raw-files/bigenough/*
+License: CECILL-B
+
+Files: raw-files/elliptic-curves/*
+License: CECILL-B
+
+Files: raw-files/grobner/*
+License: CECILL-B
+
+Files: raw-files/multinomials/*
+License: CECILL-B
+
+Files: raw-files/real-closed/*
+License: CECILL-B
+
+Files: raw-files/robot/*
+License: LGPL-3.0-only
+
+Files: raw-files/two-square/*
+License: CECILL-B
+
+Files: raw-files/bits/*
+License: Apache-2.0
+
+Files: raw-files/comp-dec-pdl/*
+License: CECILL-B
+
+Files: raw-files/disel/*
+License: BSD-2-Clause
+
+Files: raw-files/fcsl-pcm/*
+License: Apache-2.0
+
+Files: raw-files/games/*
+License: BSD-2-Clause
+
+Files: raw-files/monae/*
+License: GPL-3.0-only
+
+Files: raw-files/reglang/*
+License: CECILL-B
+
+Files: raw-files/toychain/*
+License: BSD-2-Clause
+
+Files: raw-files/infotheo/*
+License: GPL-3.0-only
+
+
+
+MIT License
+
+Copyright (c) 2020-Present MathComp Corpus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

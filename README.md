@@ -2,15 +2,12 @@
 
 A corpus of code for the [Coq proof assistant](https://coq.inria.fr) along with several
 machine-readable representations, derived from verification
-projects related to the [Mathematical Components][mathcomp-website] (MathComp) library.
+projects related to the [Mathematical Components][math-comp-website] (MathComp) library.
 The corpus can be used, e.g., in machine learning and data mining applications.
 Machine-readable representations were created using the [SerAPI library][serapi-website].
 
-[mathcomp-website]: https://math-comp.github.io
+[math-comp-website]: https://math-comp.github.io
 [serapi-website]: https://github.com/ejgallego/coq-serapi
-
-<b>We are actively updating this repository and will make it ready by
-the end of May. Stay tuned!</b>
 
 ## Obtaining the corpus
 
@@ -19,41 +16,54 @@ from GitHub. The archive includes both the source files written in Coq and files
 machine-readable representations; the latter were created using [Coq 8.10.2][coq-8102]
 and [SerAPI 0.7.1][serapi-071], via the SerAPI programs `sercomp`, `sertok`, and `sername`.
 
-[download-link]: https://github.com/EngineeringSoftware/mathcomp-corpus/releases
+[download-link]: https://github.com/EngineeringSoftware/math-comp-corpus/releases
 [coq-8102]: https://github.com/coq/coq/releases/tag/V8.10.2
 [serapi-071]: https://github.com/ejgallego/coq-serapi/releases
 
 ## Corpus contents
 
-The latest release of the corpus, based on MathComp 1.9.0, consists of 449 source files
-from 21 Coq projects --- in total over 297k lines of code (LOC).
-
-| Project                            | Revision SHA | No. files  | LOC    |
-|:---------------------------------- |:------------:|-----------:|-------:|
-| [finmap][finmap]                   | 27642a8      | 4          | 6451   |
-| [fourcolor][fourcolor]             | 0851d49      | 60         | 37138  |
-| [math-comp][math-comp]             | 748d716      | 89         | 84713  |
-| [odd-order][odd-order]             | ca602a4      | 34         | 36125  |
-| [analysis][analysis]               | 9e5fe1d      | 17         | 11739  |
-| [bigenough][bigenough]             | 5f79a32      | 1          | 78     |
-| [elliptic-curves][elliptic-curves] | 631af89      | 18         | 9596   |
-| [grobner][grobner]                 | dfa54f9      | 1          | 1330   |
-| [multinomials][multinomials]       | 691d795      | 5          | 7363   |
-| [real-closed][real-closed]         | 495a1fa      | 10         | 8925   |
-| [robot][robot]                     | b341ad1      | 13         | 11130  |
-| [two-square][two-square]           | 1c09aca      | 2          | 1721   |
-| [bits][bits]                       | 3cd298a      | 10         | 4041   |
-| [comp-dec-pdl][comp-dec-pdl]       | c1f813b      | 16         | 4419   |
-| [disel][disel]                     | e8aa80c      | 20         | 4473   |
-| [fcsl-pcm][fcsl-pcm]               | eef4503      | 12         | 5789   |
-| [games][games]                     | 3d3bd31      | 12         | 4953   |
-| [monae][monae]                     | 9d0e461      | 18         | 6655   |
-| [reglang][reglang]                 | da333e0      | 12         | 3033   |
-| [toychain][toychain]               | 97bd697      | 14         | 5275   |
-| [infotheo][infotheo]               | 6c17242      | 81         | 42295  |
-
+The latest release of the corpus, based on MathComp 1.9.0, consists of 449
+source files from 21 Coq projects --- in total over 297k lines of code (LOC).
 A [research paper][arxiv-paper] describes the corpus in more detail
-and provides additional statistics.
+and provides additional statistics. The corpus is divided into tiers based
+on how well projects conform to the [MathComp conventions][math-comp-contrib].
+
+| Project                            | Revision SHA | No. files  | LOC    | Tier | License                  |
+|:---------------------------------- |:------------:|-----------:|-------:|-----:|:-------------------------|
+| [finmap][finmap]                   | 27642a8      | 4          | 6451   | 1    | [CECILL-B][cecill-b]     |
+| [fourcolor][fourcolor]             | 0851d49      | 60         | 37138  | 1    | [CECILL-B][cecill-b]     |
+| [math-comp][math-comp]             | 748d716      | 89         | 84713  | 1    | [CECILL-B][cecill-b]     |
+| [odd-order][odd-order]             | ca602a4      | 34         | 36125  | 1    | [CECILL-B][cecill-b]     |
+| [analysis][analysis]               | 9e5fe1d      | 17         | 11739  | 2    | [CECILL-C][cecill-c]     |
+| [bigenough][bigenough]             | 5f79a32      | 1          | 78     | 2    | [CECILL-B][cecill-b]     |
+| [elliptic-curves][elliptic-curves] | 631af89      | 18         | 9596   | 2    | [CECILL-B][cecill-b]     |
+| [grobner][grobner]                 | dfa54f9      | 1          | 1330   | 2    | [CECILL-B][cecill-b]     |
+| [multinomials][multinomials]       | 691d795      | 5          | 7363   | 2    | [CECILL-B][cecill-b]     |
+| [real-closed][real-closed]         | 495a1fa      | 10         | 8925   | 2    | [CECILL-B][cecill-b]     |
+| [robot][robot]                     | b341ad1      | 13         | 11130  | 2    | [LGPL-3.0-only][lgpl3]   |
+| [two-square][two-square]           | 1c09aca      | 2          | 1721   | 2    | [CECILL-B][cecill-b]     |
+| [bits][bits]                       | 3cd298a      | 10         | 4041   | 3    | [Apache-2.0][apache2]    |
+| [comp-dec-pdl][comp-dec-pdl]       | c1f813b      | 16         | 4419   | 3    | [CECILL-B][cecill-b]     |
+| [disel][disel]                     | e8aa80c      | 20         | 4473   | 3    | [BSD-2-Clause][bsd2]     |
+| [fcsl-pcm][fcsl-pcm]               | eef4503      | 12         | 5789   | 3    | [Apache-2.0][apache2]    |
+| [games][games]                     | 3d3bd31      | 12         | 4953   | 3    | [BSD-2-Clause][bsd2]     |
+| [monae][monae]                     | 9d0e461      | 18         | 6655   | 3    | [GPL-3.0-only][gpl3]     |
+| [reglang][reglang]                 | da333e0      | 12         | 3033   | 3    | [CECILL-B][cecill-b]     |
+| [toychain][toychain]               | 97bd697      | 14         | 5275   | 3    | [BSD-2-Clause][bsd2]     |
+| [infotheo][infotheo]               | 6c17242      | 81         | 42295  | LO   | [GPL-3.0-only][gpl3]     |
+
+The structure of the corpus is as follows:
+```
+projects-standalone-8.10.yml
+                 The list of projects, alone with their URL, SHA, build command,
+                 installation command, etc.
+raw-files        The source files and their machine-readable representations.
+lemmas           The lemmas extracted from the corpus.
+lemmas-filtered  The subset of lemmas with restriction on the maximum sizes of
+                 their elaborated terms, suitable for machine learning applications.
+definitions      The definitions extracted from the corpus.
+data-indexes     The data splitting used in the research paper.
+```
 
 [finmap]: https://github.com/math-comp/finmap
 [fourcolor]: https://github.com/math-comp/fourcolor
@@ -77,7 +87,15 @@ and provides additional statistics.
 [toychain]: https://github.com/certichain/toychain
 [infotheo]: https://github.com/palmskog/infotheo
 
+[cecill-b]: https://spdx.org/licenses/CECILL-B.html
+[cecill-c]: https://spdx.org/licenses/CECILL-C.html
+[lgpl3]: https://spdx.org/licenses/LGPL-3.0-only.html
+[gpl3]: https://spdx.org/licenses/GPL-3.0-only.html
+[apache2]: https://spdx.org/licenses/Apache-2.0.html
+[bsd2]: https://spdx.org/licenses/BSD-2-Clause.html
+
 [arxiv-paper]: https://arxiv.org/abs/2004.07761
+[math-comp-contrib]: https://github.com/math-comp/math-comp/blob/mathcomp-1.9.0/CONTRIBUTING.md
 
 ## Applications
 
@@ -112,7 +130,7 @@ is serialized into the following tokens:
   (IDENT L1)(KEYWORD")")(KEYWORD :)(IDENT L1)(KEYWORD =i)(IDENT L2)
   (KEYWORD ->)(IDENT nerode)(IDENT L2)(IDENT N1)(KEYWORD .)))
 ```
-and the corresponding parsed syntax:
+and the corresponding parsed syntax (simplified):
 ```lisp
 (VernacExpr()(VernacStartTheoremProof Lemma (Id mg_eq_proof)
  (((CLocalAssum(Name(Id L1))(CHole()IntroAnonymous()))
@@ -125,7 +143,7 @@ and the corresponding parsed syntax:
    (CApp(CRef(Ser_Qualid(DirPath())(Id nerode)))
     (CRef(Ser_Qualid(DirPath())(Id L2)))(CRef(Ser_Qualid(DirPath())(Id N1))))))))
 ```
-and finally, the corresponding elaborated term:
+and finally, the corresponding elaborated term (simplified):
 ```lisp
 (Prod (Name (Id char)) ... (Prod (Name (Id L1)) ...
  (Prod (Name (Id L2)) ... (Prod (Name (Id N1)) ...
