@@ -25,7 +25,7 @@ and [SerAPI 0.7.1][serapi-071], via the SerAPI programs `sercomp`, `sertok`, and
 The latest release of the corpus, based on MathComp 1.9.0, consists of 449
 source files from 21 Coq projects --- in total over 297k lines of code (LOC).
 A [research paper][arxiv-paper] describes the corpus in more detail
-and provides additional statistics. The corpus is divided into tiers based
+and provides additional statistics. The corpus is divided into three tiers based
 on how well projects conform to the [MathComp conventions][math-comp-contrib].
 
 | Project                            | Revision SHA | No. files  | LOC    | Tier | License                  |
@@ -38,6 +38,7 @@ on how well projects conform to the [MathComp conventions][math-comp-contrib].
 | [bigenough][bigenough]             | 5f79a32      | 1          | 78     | 2    | [CECILL-B][cecill-b]     |
 | [elliptic-curves][elliptic-curves] | 631af89      | 18         | 9596   | 2    | [CECILL-B][cecill-b]     |
 | [grobner][grobner]                 | dfa54f9      | 1          | 1330   | 2    | [CECILL-B][cecill-b]     |
+| [infotheo][infotheo]               | 6c17242      | 81         | 42295  | 2    | [GPL-3.0-only][gpl3]     |
 | [multinomials][multinomials]       | 691d795      | 5          | 7363   | 2    | [CECILL-B][cecill-b]     |
 | [real-closed][real-closed]         | 495a1fa      | 10         | 8925   | 2    | [CECILL-B][cecill-b]     |
 | [robot][robot]                     | b341ad1      | 13         | 11130  | 2    | [LGPL-3.0-only][lgpl3]   |
@@ -50,7 +51,6 @@ on how well projects conform to the [MathComp conventions][math-comp-contrib].
 | [monae][monae]                     | 9d0e461      | 18         | 6655   | 3    | [GPL-3.0-only][gpl3]     |
 | [reglang][reglang]                 | da333e0      | 12         | 3033   | 3    | [CECILL-B][cecill-b]     |
 | [toychain][toychain]               | 97bd697      | 14         | 5275   | 3    | [BSD-2-Clause][bsd2]     |
-| [infotheo][infotheo]               | 6c17242      | 81         | 42295  | LO   | [GPL-3.0-only][gpl3]     |
 
 The structure of the corpus is as follows:
 
