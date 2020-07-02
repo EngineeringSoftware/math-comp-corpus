@@ -4,26 +4,32 @@ A corpus of code for the [Coq proof assistant](https://coq.inria.fr) along with 
 machine-readable representations, derived from verification
 projects related to the [Mathematical Components][math-comp-website] (MathComp) library.
 The corpus can be used, e.g., in machine learning and data mining applications.
-Machine-readable representations were created using the [SerAPI library][serapi-website].
+Machine-readable representations are in the form of [S-expressions][sexp-link] (sexps),
+and were created using the [SerAPI library][serapi-website].
 
 [math-comp-website]: https://math-comp.github.io
 [serapi-website]: https://github.com/ejgallego/coq-serapi
+[sexp-link]: https://en.wikipedia.org/wiki/S-expression
 
 ## Obtaining the corpus
 
 The latest released version of the corpus can be [downloaded][download-link]
-from GitHub. The archive includes both the source files written in Coq and files containing
-machine-readable representations; the latter were created using [Coq 8.10.2][coq-8102]
-and [SerAPI 0.7.1][serapi-071], via the SerAPI programs `sercomp`, `sertok`, and `sername`.
+from GitHub. The archive includes both the Coq source files and corresponding
+machine-readable representations.
 
 [download-link]: https://github.com/EngineeringSoftware/math-comp-corpus/releases
-[coq-8102]: https://github.com/coq/coq/releases/tag/V8.10.2
-[serapi-071]: https://github.com/ejgallego/coq-serapi/releases
 
 ## Corpus contents
 
-The latest release of the corpus, based on MathComp 1.9.0, consists of 449
-source files from 21 Coq projects --- in total over 297k lines of code (LOC).
+The latest corpus release is based on [Coq 8.10.2][coq-8102] and [MathComp 1.9.0][mathcomp-190],
+and contains 449 source files from 21 Coq projects --- in total over 297k lines of code (LOC).
+For each source file (e.g., `theory.v`), there are two corresponding files with lists of
+sexps, organized at the Coq sentence level, for tokens (`theory.tok.sexp`)
+and abstract syntax trees (`theory.ast.sexp`). Moreover, three sexp representations
+are provided for each Coq lemma statement in the corpus: tokens, abstract syntax tree, and
+elaborated term. All machine-readable representations were created using [SerAPI 0.7.1][serapi-071],
+via the SerAPI-bundled programs `sercomp`, `sertok`, and `sername`.
+
 A [research paper][arxiv-paper] describes the corpus in more detail
 and provides additional statistics. The corpus is divided into three tiers based
 on how well projects conform to the [MathComp conventions][math-comp-contrib].
@@ -56,12 +62,11 @@ The structure of the corpus is as follows:
 
 | File/directory                 | Contents                                                                               |
 |:-------------------------------|:---------------------------------------------------------------------------------------|
-| `projects-standalone-8.10.yml` | List of projects, along with their URL, SHA, build command, installation command, etc. |
+| `projects.yml`                 | List of projects, along with their URL, SHA, build command, installation command, etc. |
 | `raw-files`                    | Project source files and their machine-readable representations.                       |
-| `lemmas`                       | Lemmas extracted from the corpus.                                                      |
-| `lemmas-filtered`              | Subset of lemmas obeying restrictions on the maximum sizes of their elaborated terms.  |
+| `lemmas`                       | Lemmas for all projects in the corpus and their machine-readable statements.           |
+| `lemmas-filtered`              | Subset of lemmas obeying restrictions on the maximum sizes of elaborated terms.        |
 | `definitions`                  | Definitions extracted from the corpus.                                                 |
-| `data-indexes`                 | Data splitting used in the research paper.                                             |
 
 [finmap]: https://github.com/math-comp/finmap
 [fourcolor]: https://github.com/math-comp/fourcolor
@@ -92,6 +97,9 @@ The structure of the corpus is as follows:
 [apache2]: https://spdx.org/licenses/Apache-2.0.html
 [bsd2]: https://spdx.org/licenses/BSD-2-Clause.html
 
+[coq-8102]: https://github.com/coq/coq/releases/tag/V8.10.2
+[mathcomp-190]: https://github.com/math-comp/math-comp/releases/tag/mathcomp-1.9.0
+[serapi-071]: https://github.com/ejgallego/coq-serapi/releases/tag/8.10.0%2B0.7.1
 [arxiv-paper]: https://arxiv.org/abs/2004.07761
 [math-comp-contrib]: https://github.com/math-comp/math-comp/blob/mathcomp-1.9.0/CONTRIBUTING.md
 

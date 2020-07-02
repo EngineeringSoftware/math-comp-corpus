@@ -9,7 +9,6 @@
   ignore_path_regex: 'mathcomp/test_suite/.*'
   serapi_options: '-R mathcomp,mathcomp'
   tier: 1
-  group: 't1'
 
 - full_name: imdea-software_fcsl-pcm
   short_name: fcsl-pcm
@@ -23,7 +22,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,fcsl'
   tier: 3
-  group: 't3'
 
 - full_name: DistributedComponents_disel
   short_name: disel
@@ -39,7 +37,6 @@
   serapi_options: '-R Core,DiSeL'
   ignore_path_regex: 'Core/InjectionOld\.v|Examples/.*'
   tier: 3
-  group: 't3'
 
 - full_name: palmskog_coq-reglang
   short_name: reglang
@@ -52,7 +49,6 @@
   install_cmd: 'make install'
   serapi_options: '-R theories,RegLang'
   tier: 3
-  group: 't3'
 
 - full_name: palmskog_comp-dec-pdl
   short_name: comp-dec-pdl
@@ -65,7 +61,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,CDPDL'
   tier: 3
-  group: 't3'
 
 - full_name: math-comp_odd-order
   short_name: odd-order
@@ -78,7 +73,6 @@
   install_cmd: 'make install'
   serapi_options: '-R theories,odd_order'
   tier: 1
-  group: 't1'
 
 - full_name: math-comp_fourcolor
   short_name: fourcolor
@@ -92,7 +86,6 @@
   serapi_options: '-R theories,fourcolor'
   ignore_path_regex: 'theories/(job|task)\d{3}to\d{3}\.v'
   tier: 1
-  group: 't1'
 
 - full_name: math-comp_finmap
   short_name: finmap
@@ -106,7 +99,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,mathcomp.finmap'
   tier: 1
-  group: 't1'
 
 - full_name: math-comp_bigenough
   short_name: bigenough
@@ -120,7 +112,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,mathcomp.bigenough'
   tier: 2
-  group: 't2'
 
 - full_name: math-comp_analysis
   short_name: analysis
@@ -137,7 +128,6 @@
   serapi_options: '-R .,mathcomp.analysis'
   ignore_path_regex: 'misc/uniform_bigO\.v|altreals/dedekind\.v'
   tier: 2
-  group: 't2'
 
 - full_name: math-comp_real-closed
   short_name: real-closed
@@ -152,7 +142,6 @@
   install_cmd: 'make install'
   serapi_options: '-R theories,mathcomp.real_closed'
   tier: 2
-  group: 't2'
 
 - full_name: affeldt-aist_coq-robot
   short_name: robot
@@ -168,7 +157,6 @@
   serapi_options: '-R .,robot'
   ignore_path_regex: 'cross_product\.v'
   tier: 2
-  group: 't2'
 
 - full_name: math-comp_multinomials
   short_name: multinomials
@@ -184,7 +172,6 @@
   install_cmd: 'make install'
   serapi_options: '-R src,SsrMultinomials'
   tier: 2
-  group: 't2'
 
 - full_name: strub_elliptic-curves-ssr
   short_name: elliptic-curves
@@ -199,7 +186,6 @@
   install_cmd: 'make install'
   serapi_options: '-R 3rdparty,SsrEllipticCurves -R common,SsrEllipticCurves -R src,SsrEllipticCurves'
   tier: 2
-  group: 't2'
 
 - full_name: certichain_toychain
   short_name: toychain
@@ -213,7 +199,6 @@
   install_cmd: 'make install'
   serapi_options: '-Q Structures,Toychain -Q Systems,Toychain -Q Properties,Toychain -Q Extraction,Toychain'
   tier: 3
-  group: 't3'
 
 - full_name: coq-community_coq-bits
   short_name: bits
@@ -227,7 +212,6 @@
   serapi_options: '-R src,Bits'
   ignore_path_regex: 'test/.*'
   tier: 3
-  group: 't3'
 
 - full_name: thery_twoSquare
   short_name: two-square
@@ -240,7 +224,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,mathcomp.contrib.sum_of_two_square'
   tier: 2
-  group: 't2'
 
 - full_name: thery_grobner
   short_name: grobner
@@ -254,7 +237,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,mathcomp.contrib.grobner'
   tier: 2
-  group: 't2'
 
 - full_name: palmskog_infotheo
   short_name: infotheo
@@ -268,7 +250,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,infotheo'
   tier: 2
-  group: 'lo'
 
 - full_name: palmskog_monae
   short_name: monae
@@ -283,7 +264,6 @@
   install_cmd: 'make install'
   serapi_options: '-R .,monad'
   tier: 3
-  group: 't3'
 
 - full_name: gstew5_games
   short_name: games
@@ -296,4 +276,3 @@
   install_cmd: 'make install'
   serapi_options: '-R .,Games'
   tier: 3
-  group: 't3'
