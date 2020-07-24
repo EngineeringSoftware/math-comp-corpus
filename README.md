@@ -1,7 +1,7 @@
 # MathComp Corpus
 
 A corpus of code for the [Coq proof assistant](https://coq.inria.fr) along with several
-machine-readable representations, derived from verification
+independently machine-readable representations, derived from verification
 projects related to the [Mathematical Components][math-comp-website] (MathComp) library.
 The corpus can be used, e.g., in machine learning and data mining applications.
 Machine-readable representations are in the form of [S-expressions][sexp-link] (sexps),
@@ -116,7 +116,8 @@ the corresponding research paper in any related publication:
   author = {Nie, Pengyu and Palmskog, Karl and Li, Junyi Jessy and Gligoric, Milos},
   title = {Deep Generation of {Coq} Lemma Names Using Elaborated Terms},
   booktitle = {International Joint Conference on Automated Reasoning},
-  pages = {To appear},
+  pages = {97--118},
+  doi = {10.1007/978-3-030-51054-1_6},
   year = {2020},
 }
 ```
@@ -129,7 +130,7 @@ The Coq lemma sentence
 ```coq
 Lemma mg_eq_proof L1 L2 (N1 : mgClassifier L1) : L1 =i L2 -> nerode L2 N1.
 ```
-is serialized into the following tokens:
+is serialized into the following tokens (simplified):
 ```lisp
 (Sentence((IDENT Lemma)(IDENT mg_eq_proof)(IDENT L1)(IDENT L2)
   (KEYWORD"(")(IDENT N1)(KEYWORD :)(IDENT mgClassifier)
@@ -158,6 +159,12 @@ and finally, the corresponding elaborated term (simplified):
   (App (Ref (DirPath ((Id myhill_nerode) (Id RegLang))) (Id nerode)) ...
    (Var (Id L2)) ... (Var (Id N1))))))))
 ```
+
+## License
+
+As described in more detail in the [license file](LICENSE), all corpus metadata is
+licensed under the MIT license, while all Coq source files and corresponding
+S-expression files are licensed under their respective original open-source licenses.
 
 ## Authors
 
